@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/selectButton"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남성"
+        android:textColor="#ffaaff10"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:id="@+id/radio1" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여성"
+        android:textColor="#ffaaff10"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:id="@+id/radio2" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:gravity="center_horizontal|center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하루종일"
+        android:textSize="24dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/allDays"
+        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>
