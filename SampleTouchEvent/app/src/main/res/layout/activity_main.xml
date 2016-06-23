@@ -8,7 +8,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.androidtown.sampletouchevent.MainActivity"
-    android:id="@+id/container">
+    android:id="@+id/container"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +18,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="119dp" />
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <org.androidtown.sampletouchevent.MyView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#ffeeccff"
+        android:layout_below="@id/textView"></org.androidtown.sampletouchevent.MyView>
 </LinearLayout>

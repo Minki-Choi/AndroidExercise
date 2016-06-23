@@ -1,11 +1,13 @@
 package org.androidtown.sampletouchevent;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,5 +31,17 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        if(newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE) {
+            Toast.makeText(this,"On landscape mode",Toast.LENGTH_SHORT).show();
+        }
+
+        else if (newConfig.orientation==Configuration.ORIENTATION_PORTRAIT) {
+            Toast.makeText(this,"On portrait mode",Toast.LENGTH_SHORT).show();
+        }
+        super.onConfigurationChanged(newConfig);
     }
 }
